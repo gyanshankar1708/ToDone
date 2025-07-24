@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://gyanshankar1708.github.io/ToDone",
+  "homepage": "https://gyanshankar1708.github.io/ToDone/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
