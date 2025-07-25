@@ -76,16 +76,20 @@ function App() {
     }
   }
 
+  const handleClear = () => {
+    setTodos([]);
+  }
+
   return (
     <>
-      <Navbar />
+      <Navbar onClear={handleClear} />
       <div className="container bg-emerald-100 md:mx-auto md:my-5 p-5 rounded-xl md:min-h-[80vh] min-h-[86vh] flex flex-col items-center md:w-1/2">
         <div className='w-full'>
           <div >
             <h1 className='text-2xl font-bold text-center m-3'>ToDone – From ToDo to Done!</h1>
             <h2 className="font-bold">Add New Todo</h2>
             <div className="new-todo-form flex">
-              <input onChange={handleChange} value={todo} ref={inputRef} type="text" className='border-1 rounded-lg w-full px-3' onKeyDown={enterClick}/>
+              <input onChange={handleChange} value={todo} ref={inputRef} type="text" className='border-1 rounded-lg w-full px-3' onKeyDown={enterClick} />
               <button onClick={handleAdd} disabled={todo.length < 3} className='px-3 py-1 bg-slate-600 mx-5 rounded-lg text-white font-bold cursor-pointer hover:bg-slate-800 disabled:bg-slate-400 disabled:cursor-not-allowed '><FaSave size={30} /></button>
             </div>
           </div>
