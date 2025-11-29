@@ -46,12 +46,5 @@ ToDone/
 │  ├─ App.jsx
 │  ├─ index.css
 │  └─ main.jsx
-├─ .gitignore
-├─ eslint.config.js
-├─ favicon.ico
-├─ index.html
-├─ package-lock.json
-├─ package.json
-├─ README.md
-└─ vite.config.js
+└─ Some necessary documantaion
 ```
